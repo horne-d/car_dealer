@@ -1,4 +1,4 @@
-## Nexus Point tech assignment
+## Nexus Point tech assignment - Daniel Horne
 
 I was asked to take a design on Figma, and apply this to code.
 
