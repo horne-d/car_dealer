@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CarDealer</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarDealer</title>
 
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;400&display=swap" rel="stylesheet">
 
-        <script src="https://kit.fontawesome.com/5ac3be84e8.js" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5ac3be84e8.js" crossorigin="anonymous"></script>
 
-    </head>
-    <body>
+</head>
+<body>
+    <header class="non_desktop">
+        <h2>CarDealer<span>UK</span></h2>
+        <span class="header_buttons">
+            <button class="mobile_only">Contact</button>
+            <button class="main_nav">Call</button>
+            <button class="main_nav">Email</button>
+            <button>Menu</button>
+        </span>
+    </header>
+
+    <header class="desktop_nav">
         <div class="container_nav">
             <div class="nav_title">
-                <h2>CarDealer<span>UK</span>
-                    <span class="starred_cars"><i class="far fa-star"></i></span><span class="total_stars">0</span>
-                </h2>
+                <h2>CarDealer<span>UK</span></h2>
             </div>
-            
             <nav>
                 <ul>
                     <li>
@@ -51,13 +58,13 @@
                 <button>Email us</button>
             </nav>
         </div>
-
+    
         <div class="container_finance">
             <div class="finance_title">
                 <h4>Finance a new or used car</h4>
                 <p>Adjust the options to find the finance arrangement that suits you.</p>
             </div>
-
+    
             <div class="finance_selects">
                 <div class="select_box">
                     <label for="deposit">Deposit</label>
@@ -85,518 +92,745 @@
                 </div>
             </div>
         </div>
+    </header>
 
-        <div class="container_main">
-            <div class="filters_left">
-                <div class="filters_title">
-                    <h3>Filters</h3>
-                    <button>Reset</button>
+    <section class="filters_button">
+        <button>
+            <i class="fas fa-sliders-h"></i>
+            Filters
+        </button>
+    </section>
+
+    <div class="mobile_container">
+        <section class="car_types">
+            <ul>
+                <li class="active">
+                    <a href="">All</a>
+                </li>
+                <li>
+                    <a href="">Used</a>
+                </li>
+                <li>
+                    <a href="">New</a>
+                </li>
+                <li>
+                    <a href="">Offers</a>
+                </li>
+            </ul>
+        </section>
+        <section class="vehicle_cards">
+            <div class="m_card">
+               <div class="card_header">
+                    <img class="car_image" src="img/car1.png" alt="car1">
+                    <img class="car_image" src="img/car1.png" alt="car1">
+                    <img class="car_image" src="img/car1.png" alt="car1">
+                    <img class="car_image" src="img/car1.png" alt="car1">
+                </div> 
+                <div class="card_footer">
+                    <div class="car_details">
+                        <p class="car_make">
+                            <strong>
+                                2014 (64) Mercedes-Benz
+                            </strong> 
+                            <span>
+                                <button>New</button>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </p>
+                        <p class="car_model">CLA 250e Coupe Shooting Break</p>
+                    </div>
+                    <table class="car_info">
+                        <tr>
+                            <td>
+                                <p>32k miles <span class="table_divider">|</span> Hybrid</p>
+                            </td>
+                            <td>
+                                <p class="car_monthly_price"><strong>£550.90</strong> <span>/mo (PCP)</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Manual <span class="table_divider">|</span> SUV</p>
+                            </td>
+                            <td>
+                                <p class="car_total_price">£23,300</p>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
+            </div>
+            
+            <div class="m_card">
+                <div class="card_header">
+                     <img class="car_image" src="img/car3.png" alt="car3">
+                     <img class="car_image" src="img/car3.png" alt="car3">
+                     <img class="car_image" src="img/car3.png" alt="car3">
+                     <img class="car_image" src="img/car3.png" alt="car3">
+                 </div> 
+                 <div class="card_footer">
+                     <div class="car_details">
+                         <p class="car_make">
+                             <strong>
+                                2019 (19) Renault Zoe
+                             </strong> 
+                             <span>
+                                 <button>New</button>
+                                 <i class="far fa-star"></i>
+                             </span>
+                         </p>
+                         <p class="car_model">i R135 Rapid Charge ZE50</p>
+                     </div>
+                     <table class="car_info">
+                         <tr>
+                             <td>
+                                 <p>325 miles <span class="table_divider">|</span> EV</p>
+                             </td>
+                             <td>
+                                 <p class="car_monthly_price"><strong>£550.90</strong> <span>/mo (PCP)</span></p>
+                             </td>
+                         </tr>
+                         <tr>
+                             <td>
+                                 <p>Automatic <span class="table_divider">|</span> Hatchback</p>
+                             </td>
+                             <td>
+                                 <p class="car_total_price discount">£23,300 <span class="old_price">£23,300</span></p>
+                             </td>
+                         </tr>
+                     </table>
+                 </div>
+            </div>
+            
+            <div class="m_card">
+                <div class="card_header">
+                     <img class="car_image" src="img/car2.png" alt="car2">
+                     <img class="car_image" src="img/car2.png" alt="car2">
+                     <img class="car_image" src="img/car2.png" alt="car2">
+                     <img class="car_image" src="img/car2.png" alt="car2">
+                 </div> 
+                 <div class="card_footer">
+                     <div class="car_details">
+                         <p class="car_make">
+                            <strong>
+                                2020 (20) Peugeot 208
+                            </strong> 
+                            <span>
+                                <button>New</button>
+                                <i class="far fa-star"></i>
+                            </span>
+                         </p>
+                         <p class="car_model">1.2 PureTech 100 GT-Line</p>
+                     </div>
+                     <table class="car_info">
+                         <tr>
+                             <td>
+                                 <p>Petrol <span class="table_divider">|</span> Automatic</p>
+                             </td>
+                             <td>
+                                 <p class="car_monthly_price"><strong>£550.90</strong> <span>/mo (PCP)</span></p>
+                             </td>
+                         </tr>
+                         <tr>
+                             <td>
+                                 <p>Hatchback <span class="table_divider"></p>
+                             </td>
+                             <td>
+                                <p class="car_total_price discount">£23,300 <span class="old_price">£23,300</span></p>
+                             </td>
+                         </tr>
+                     </table>
+                 </div>
+            </div>       
 
-                <div class="filters_brand">
-                    <h4 class="title">Brand</h4>
-                    <div class="sub_filter">
-                        <p class="active">Make</p>
-                        <span><i class="fas fa-plus"></i></span>
+            <div class="m_card">
+                <div class="card_header">
+                     <img class="car_image" src="img/car1.png" alt="car1">
+                     <img class="car_image" src="img/car1.png" alt="car1">
+                     <img class="car_image" src="img/car1.png" alt="car1">
+                     <img class="car_image" src="img/car1.png" alt="car1">
+                 </div> 
+                 <div class="card_footer">
+                     <div class="car_details">
+                         <p class="car_make">
+                             <strong>
+                                 2014 (64) Mercedes-Benz
+                             </strong> 
+                             <span>
+                                 <button>New</button>
+                                 <i class="far fa-star"></i>
+                             </span>
+                         </p>
+                         <p class="car_model">CLA 250e Coupe Shooting Break</p>
+                     </div>
+                     <table class="car_info">
+                         <tr>
+                             <td>
+                                 <p>32k miles <span class="table_divider">|</span> Hybrid</p>
+                             </td>
+                             <td>
+                                 <p class="car_monthly_price"><strong>£550.90</strong> <span>/mo (PCP)</span></p>
+                             </td>
+                         </tr>
+                         <tr>
+                             <td>
+                                 <p>Manual <span class="table_divider">|</span> SUV</p>
+                             </td>
+                             <td>
+                                 <p class="car_total_price">£23,300</p>
+                             </td>
+                         </tr>
+                     </table>
+                 </div>
+            </div>
+            
+            <div class="m_card">
+                <div class="card_valuation">
+                    <div class="valuation_text">
+                        <h3>Value your car</h3>
+                        <p>Find out in just a few minutes</p>
                     </div>
-                    <div class="sub_filter">
-                        <p class="">Model</p>
-                        <span><i class="fas fa-plus"></i></span>
-                    </div>
-                </div>
-
-                <div class="filters_budget">
-                    <h4 class="title">Budget</h4>
-                    <div class="active_filter">
-                        <div class="sub_filter">
-                            <p class="active">Min. Price</p>
-                            <span><i class="fas fa-plus"></i></span>
-                        </div>
-                        <div class="filter_options">
-                            <p class="selected">£5,000</p>
-                            <span><i class="fas fa-minus"></i></span>
-                        </div>
-                    </div>
-                    <div class="sub_filter">
-                        <p class="active">Max. Price</p>
-                        <span><i class="fas fa-plus"></i></span>
-                    </div>
-                </div>
-
-                <div class="filters_spec">
-                    <h4 class="title">Specification</h4>
-                    
-                    <div class="sub_filter">
-                        <p class="active">Fuel type</p>
-                        <span><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="sub_filter highlighted">
-                        <p class="active">Body type</p>
-                        <span><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="sub_filter">
-                        <p class="active">Transmission</p>
-                        <span><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="sub_filter">
-                        <p class="active">Engine size</p>
-                        <span><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="sub_filter">
-                        <p class="active">Mileage</p>
-                        <span><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="sub_filter">
-                        <p class="active">Colour</p>
-                        <span><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="sub_filter">
-                        <p class="active">Doors</p>
-                        <span><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="sub_filter">
-                        <p class="active">Seats</p>
-                        <span><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="sub_filter">
-                        <p class="active">Features</p>
-                        <span><i class="fas fa-plus"></i></span>
-                    </div>
+                    <button>Get valuation</button>
                 </div>
             </div>
 
-            <div class="filters_results">
+            <div class="m_card">
+                <div class="card_header">
+                     <img class="car_image" src="img/car3.png" alt="car3">
+                     <img class="car_image" src="img/car3.png" alt="car3">
+                     <img class="car_image" src="img/car3.png" alt="car3">
+                     <img class="car_image" src="img/car3.png" alt="car3">
+                 </div> 
+                 <div class="card_footer">
+                     <div class="car_details">
+                         <p class="car_make">
+                             <strong>
+                                2019 (19) Renault Zoe
+                             </strong> 
+                             <span>
+                                 <button>New</button>
+                                 <i class="far fa-star"></i>
+                             </span>
+                         </p>
+                         <p class="car_model">i R135 Rapid Charge ZE50</p>
+                     </div>
+                     <table class="car_info">
+                         <tr>
+                             <td>
+                                 <p>325 miles <span class="table_divider">|</span> EV</p>
+                             </td>
+                             <td>
+                                 <p class="car_monthly_price"><strong>£550.90</strong> <span>/mo (PCP)</span></p>
+                             </td>
+                         </tr>
+                         <tr>
+                             <td>
+                                 <p>Automatic <span class="table_divider">|</span> Hatchback</p>
+                             </td>
+                             <td>
+                                 <p class="car_total_price discount">£23,300 <span class="old_price">£23,300</span></p>
+                             </td>
+                         </tr>
+                     </table>
+                 </div>
+            </div>       
+
+            <div class="m_card">
+                <div class="card_header">
+                     <img class="car_image" src="img/car2.png" alt="car2">
+                     <img class="car_image" src="img/car2.png" alt="car2">
+                     <img class="car_image" src="img/car2.png" alt="car2">
+                     <img class="car_image" src="img/car2.png" alt="car2">
+                 </div> 
+                 <div class="card_footer">
+                     <div class="car_details">
+                         <p class="car_make">
+                            <strong>
+                                2020 (20) Peugeot 208
+                            </strong> 
+                            <span>
+                                <button>New</button>
+                                <i class="far fa-star"></i>
+                            </span>
+                         </p>
+                         <p class="car_model">1.2 PureTech 100 GT-Line</p>
+                     </div>
+                     <table class="car_info">
+                         <tr>
+                             <td>
+                                 <p>Petrol <span class="table_divider">|</span> Automatic</p>
+                             </td>
+                             <td>
+                                 <p class="car_monthly_price"><strong>£550.90</strong> <span>/mo (PCP)</span></p>
+                             </td>
+                         </tr>
+                         <tr>
+                             <td>
+                                 <p>Hatchback <span class="table_divider"></p>
+                             </td>
+                             <td>
+                                <p class="car_total_price discount">£23,300 <span class="old_price">£23,300</span></p>
+                             </td>
+                         </tr>
+                     </table>
+                 </div>
+            </div> 
+        </section>
+    </div>
+
+    <div class="main_container">
+        <div class="filters_left">
+            <div class="filters_title">
+                <h3>Filters</h3>
+                <button>Reset</button>
+            </div>
+
+            <div class="filters_brand">
+                <h4 class="title">Brand</h4>
+                <div class="sub_filter">
+                    <p class="active">Make</p>
+                    <span><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="sub_filter">
+                    <p class="">Model</p>
+                    <span><i class="fas fa-plus"></i></span>
+                </div>
+            </div>
+
+            <div class="filters_budget">
+                <h4 class="title">Budget</h4>
+                <div class="active_filter">
+                    <div class="sub_filter">
+                        <p class="active">Min. Price</p>
+                        <span><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="filter_options">
+                        <p class="selected">£5,000</p>
+                        <span><i class="fas fa-minus"></i></span>
+                    </div>
+                </div>
+                <div class="sub_filter">
+                    <p class="active">Max. Price</p>
+                    <span><i class="fas fa-plus"></i></span>
+                </div>
+            </div>
+
+            <div class="filters_spec">
+                <h4 class="title">Specification</h4>
                 
-                <div class="results_title">
-                    <h3>Showing 339 cars</h3>
+                <div class="sub_filter">
+                    <p class="active">Fuel type</p>
+                    <span><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="sub_filter highlighted">
+                    <p class="active">Body type</p>
+                    <span><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="sub_filter">
+                    <p class="active">Transmission</p>
+                    <span><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="sub_filter">
+                    <p class="active">Engine size</p>
+                    <span><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="sub_filter">
+                    <p class="active">Mileage</p>
+                    <span><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="sub_filter">
+                    <p class="active">Colour</p>
+                    <span><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="sub_filter">
+                    <p class="active">Doors</p>
+                    <span><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="sub_filter">
+                    <p class="active">Seats</p>
+                    <span><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="sub_filter">
+                    <p class="active">Features</p>
+                    <span><i class="fas fa-plus"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="filters_results">
+                
+            <div class="results_title">
+                <h3>339 cars</h3>
+                <div class="car_options">
                     <button class="selected">All</button>
                     <button>Used</button>
                     <button class="premium">New</button>
                     <button>Offer</button>
                 </div>
-
-                <div class="results_cards">
-                    <div class="card_1 card">
-                        <div class="card_img_main">
-                            <p>Used</p>
-                            <div class="car_filters">
-                                <span>32k miles</span>
-                                <span>Hybrid</span>
-                                <span>Manual</span>
-                                <span>SUV</span>
-                            </div>
-                        </div>
-                        <div class="card_stats">
-                            <div class="car_details">
-                                <p class="car_make">2014 (64) Mercedes-Benz <span><i onclick="toggleStar(this)" class="far fa-star"></i></span></p>
-                                <p class="car_model">CLA 250e Coupe Shooting Break</p>
-                            </div>
-                            <div class="car_price">
-                                <p class="car_monthly_price">£550.90 <span>/mo (PCP)</span></p>
-                                <p class="car_total_price">£23,300 <span><a href="">Calculate</a></span></p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="card_2 card">
-                        <div class="card_img_main">
-                            <p>New</p>
-                            <div class="car_filters">
-                                <span>Petrol</span>
-                                <span>Automatic</span>
-                                <span>Hatchback</span>
-                            </div>
-                        </div>
-                        <div class="card_stats">
-                            <div class="car_details">
-                                <p class="car_make">2020 (20) Peugeot 208 <span><i onclick="toggleStar(this)" class="far fa-star"></i></span></p>
-                                <p class="car_model">1.2 PureTech 100 GT-Line</p>
-                            </div>
-                            <div class="car_price">
-                                <p class="car_monthly_price">£550.90 <span>/mo (PCP)</span></p>
-                                <p class="car_total_price">£23,300 <span><a href="">Calculate Finance</a></span></p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="card_3 card">
-                        <div class="card_img_main">
-                            <p>Used</p>
-                            <div class="car_filters">
-                                <span>325 miles</span>
-                                <span>EV</span>
-                                <span>Automatic</span>
-                                <span>Hatchback</span>
-                            </div>
-                        </div>
-                        <div class="card_stats">
-                            <div class="car_details">
-                                <p class="car_make">2019 (19) Renault Zoe <span><i onclick="toggleStar(this)" class="far fa-star"></i></span></p>
-                                <p class="car_model">i R135 Rapid Charge ZE50</p>
-                            </div>
-                            <div class="car_price">
-                                <p class="car_monthly_price">£550.90 <span>/mo (PCP)</span></p>
-                                <p class="car_total_price discount">£23,300 <span class="old_price">£23,300</span> <span><a href="">Calculate finance</a></span></p>
-                            </div>
-                            
-                        </div>
-                    </div> 
-                    <div class="card_4 card">
-                        <div class="card_img_main">
-                            <p>New</p>
-                            <div class="car_filters">
-                                <span>Petrol</span>
-                                <span>Automatic</span>
-                                <span>Hatchback</span>
-                            </div>
-                        </div>
-                        <div class="card_stats">
-                            <div class="car_details">
-                                <p class="car_make">2020 (20) Peugeot 208 <span><i onclick="toggleStar(this)" class="far fa-star"></i></span></p>
-                                <p class="car_model">1.2 PureTech 100 GT-Line</p>
-                            </div>
-                            <div class="car_price">
-                                <p class="car_monthly_price">£550.90 <span>/mo (PCP)</span></p>
-                                <p class="car_total_price">£23,300 <span><a href="">Calculate Finance</a></span></p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="card_value card">
-                        <div class="car_value_info">
-                            <h3>Value your car</h3>
-                            <h5>Find out the value of your car in just a few minutes.</h5>
-                            <p>VRM<span>*</span></p>
-                            <input type="text" name="" id="" placeholder="Enter VRM">
-                            <p>Mileage<span>*</span></p>
-                            <input type="text" name="" id="" placeholder="Enter Mileage">
-                            <button>Value my car</button>
-                        </div>
-                    </div> 
-                    <div class="card_5 card">
-                        <div class="card_img_main">
-                            <p>Used</p>
-                            <div class="car_filters">
-                                <span>32k miles</span>
-                                <span>Hybrid</span>
-                                <span>Manual</span>
-                                <span>SUV</span>
-                            </div>
-                        </div>
-                        <div class="card_stats">
-                            <div class="car_details">
-                                <p class="car_make">2014 (64) Mercedes-Benz <span><i onclick="toggleStar(this)" class="far fa-star"></i></span></p>
-                                <p class="car_model">CLA 250e Coupe Shooting Break</p>
-                            </div>
-                            <div class="car_price">
-                                <p class="car_monthly_price">£550.90 <span>/mo (PCP)</span></p>
-                                <p class="car_total_price">£23,300 <span><a href="">Calculate</a></span></p>
-                            </div>
-                            
-                        </div>
-                    </div> 
-                    <div class="card_6 card">
-                        <div class="card_img_main">
-                            <p>Used</p>
-                            <div class="car_filters">
-                                <span>325 miles</span>
-                                <span>EV</span>
-                                <span>Automatic</span>
-                                <span>Hatchback</span>
-                            </div>
-                        </div>
-                        <div class="card_stats">
-                            <div class="car_details">
-                                <p class="car_make">2019 (19) Renault Zoe <span><i onclick="toggleStar(this)" class="far fa-star"></i></span></p>
-                                <p class="car_model">i R135 Rapid Charge ZE50</p>
-                            </div>
-                            <div class="car_price">
-                                <p class="car_monthly_price">£550.90 <span>/mo (PCP)</span></p>
-                                <p class="car_total_price discount">£23,300 <span class="old_price">£23,300</span> <span><a href="">Calculate finance</a></span></p>
-                            </div>
-                            
-                        </div>
-                    </div> 
-                    <div class="card_7 card">
-                        <div class="card_img_main">
-                            <p>Used</p>
-                            <div class="car_filters">
-                                <span>32k miles</span>
-                                <span>Hybrid</span>
-                                <span>Manual</span>
-                                <span>SUV</span>
-                            </div>
-                        </div>
-                        <div class="card_stats">
-                            <div class="car_details">
-                                <p class="car_make">2014 (64) Mercedes-Benz <span><i onclick="toggleStar(this)" class="far fa-star"></i></span></p>
-                                <p class="car_model">CLA 250e Coupe Shooting Break</p>
-                            </div>
-                            <div class="car_price">
-                                <p class="car_monthly_price">£550.90 <span>/mo (PCP)</span></p>
-                                <p class="car_total_price">£23,300 <span><a href="">Calculate</a></span></p>
-                            </div>
-                            
-                        </div>
-                    </div> 
-                    <div class="card_8 card">
-                        <div class="card_img_main">
-                            <p>New</p>
-                            <div class="car_filters">
-                                <span>Petrol</span>
-                                <span>Automatic</span>
-                                <span>Hatchback</span>
-                            </div>
-                        </div>
-                        <div class="card_stats">
-                            <div class="car_details">
-                                <p class="car_make">2020 (20) Peugeot 208 <span><i onclick="toggleStar(this)" class="far fa-star"></i></span></p>
-                                <p class="car_model">1.2 PureTech 100 GT-Line</p>
-                            </div>
-                            <div class="car_price">
-                                <p class="car_monthly_price">£550.90 <span>/mo (PCP)</span></p>
-                                <p class="car_total_price">£23,300 <span><a href="">Calculate Finance</a></span></p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="card_9 card">
-                        <div class="card_img_main">
-                            <p>Used</p>
-                            <div class="car_filters">
-                                <span>32k miles</span>
-                                <span>Hybrid</span>
-                                <span>Manual</span>
-                                <span>SUV</span>
-                            </div>
-                        </div>
-                        <div class="card_stats">
-                            <div class="car_details">
-                                <p class="car_make">2014 (64) Mercedes-Benz <span><i onclick="toggleStar(this)" class="far fa-star"></i></span></p>
-                                <p class="car_model">CLA 250e Coupe Shooting Break</p>
-                            </div>
-                            <div class="car_price">
-                                <p class="car_monthly_price">£550.90 <span>/mo (PCP)</span></p>
-                                <p class="car_total_price">£23,300 <span><a href="">Calculate</a></span></p>
-                            </div>
-                            
-                        </div>
-                    </div> 
-                    <div class="card_10 card">
-                        <div class="card_img_main">
-                            <p>New</p>
-                            <div class="car_filters">
-                                <span>32k miles</span>
-                                <span>Hybrid</span>
-                                <span>Manual</span>
-                                <span>SUV</span>
-                            </div>
-                        </div>
-                        <div class="card_stats">
-                            <div class="car_details">
-                                <p class="car_make">2014 (64) Mercedes-Benz <span><i onclick="toggleStar(this)" class="far fa-star"></i></span></p>
-                                <p class="car_model">CLA 250e Coupe Shooting Break</p>
-                            </div>
-                            <div class="car_price">
-                                <p class="car_monthly_price">£550.90 <span>/mo (PCP)</span></p>
-                                <p class="car_total_price">£23,300 <span><a href="">Calculate</a></span></p>
-                            </div>
-                            
-                        </div>
-                    </div> 
-                    <div class="card_11 card">
-                        <div class="card_img_main">
-                            <p>Used</p>
-                            <div class="car_filters">
-                                <span>325 miles</span>
-                                <span>EV</span>
-                                <span>Automatic</span>
-                                <span>Hatchback</span>
-                            </div>
-                        </div>
-                        <div class="card_stats">
-                            <div class="car_details">
-                                <p class="car_make">2019 (19) Renault Zoe <span><i onclick="toggleStar(this)" class="far fa-star"></i></span></p>
-                                <p class="car_model">i R135 Rapid Charge ZE50</p>
-                            </div>
-                            <div class="car_price">
-                                <p class="car_monthly_price">£550.90 <span>/mo (PCP)</span></p>
-                                <p class="car_total_price discount">£23,300 <span class="old_price">£23,300</span> <span><a href="">Calculate finance</a></span></p>
-                            </div>
-                            
-                        </div>
-                    </div> 
-                </div>
-
-                <div class="results_pagination">
-                    <div class="to_top">
-                        <a href="#">Back to top</a>
-                    </div>
-                    <div class="page_buttons">
-                        <span><i class="fas fa-angle-left"></i></span>
-                        <span class="active">1</span>
-                        <span>2</span>
-                        <span>3</span>
-                        <span><i class="fas fa-angle-right"></i></span>
-                        <span><i class="fas fa-angle-double-right"></i></span>
-                    </div>
-                    <div class="sorting">
-                        <select name="" id="">
-                            <option value="">Lowest price</option>
-                            <option value="">Highest price</option>
-                            <option value="">Most popular</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="agreement_terms">
-                    <div class="agreement_writing">
-                        <div class="agreement">
-                            <p><strong>Representative example:</strong> Borrowing £11,790.00 over 4 years with a representative APR of 7.9 %, an annual interest rate of 4.08 % (Fixed) and a deposit of £500.00, the amount payable would be £273.59 per month, with a total cost of credit of £1,843.32 and a total amount payable of £13,633.32.</p>
-                        </div>
-                        <div class="hide_button">
-                            <button>Hide breakdown <span><i class="fas fa-angle-up"></i></span></button>
-                        </div>
-                        
-                        <div class="show_button">
-                            <button>Show breakdown <span><i class="fas fa-angle-down"></i></span></button>
-                        </div>
-                    </div>
-
-                    <div class="available_plans">
-                        <div class="pcp_plan">
-                            <p>Personal Contract Purchase</p>
-                        </div>
-                        <div class="hp_plan">
-                            <p>Hire Purchase</p>
-                        </div>
-                    </div>
-                    
-                    <div class="agreement_plan">
-                        <div class="amount_months data_field">
-                            <p class="plan_title">48 monthly payments</p>
-                            <p class="plan_data">£157.25</p>
-                        </div>
-                        <div class="cash_price data_field">
-                            <p class="plan_title">Cash price</p>
-                            <p class="plan_data">£9,998.00</p>
-                        </div>
-                        <div class="cust_deposit data_field">
-                            <p class="plan_title">Customer deposit</p>
-                            <p class="plan_data">£250.00</p>
-                        </div>
-                        <div class="amount_of_credit data_field">
-                            <p class="plan_title">Amount of credit</p>
-                            <p class="plan_data">£11,980.75</p>
-                        </div>
-                        <div class="apr data_field">
-                            <p class="plan_title">APR</p>
-                            <p class="plan_data">7.9%</p>
-                        </div>
-                        <div class="term data_field">
-                            <p class="plan_title">Term</p>
-                            <p class="plan_data">48 months</p>
-                        </div>
-                        <div class="total_payable data_field">
-                            <p class="plan_title">Total amount payable</p>
-                            <p class="plan_data">£12,163.72</p>
-                        </div>
-                        <div class="rate_of_interest data_field">
-                            <p class="plan_title">Rate of interest (fixed)</p>
-                            <p class="plan_data">4.08% PA</p>
-                        </div>
-                        <div class="annual_mileage data_field">
-                            <p class="plan_title">Annual mileage</p>
-                            <p class="plan_data">8,000</p>
-                        </div>
-                        <div class="optional_final_payment data_field">
-                            <p class="plan_title">Optional final payment</p>
-                            <p class="plan_data">£3888.04</p>
-                        </div>
-                      </div>
-                    
-                </div>
-            </div>
-        </div>
-
-        <div class="filters_menu">
-            <button><i class="fas fa-sliders-h"></i> Filters</button>
-        </div>
-
-        <div class="container_footer">
-            <div class="footer_title">
-                <h2>CarDealer<span>UK</span></h2>
-            </div>
-
-            <div class="branch_details">
-                <h3>Brand details</h3>
-                <div class="business_details">
-                    <div class="address_details">
-                        <h4>Address</h4>
-                        <p>101 Business Street</p>
-                        <p>Business Town</p>
-                        <p>Business County</p>
-                        <p>BUS1 N55</p>
-
-                        <h4>Telephone</h4>
-                        <p><a href="tel:01234 567890" class="telephone">01234 567890</a></p>
-                    </div>
-
-                    <div class="opening_times">
-                        <h4>Opening Times</h4>
-                        <p class="shifts">Weekdays<span>09:00 - 18:00</span></p>
-                        <p class="shifts">Saturday<span>10:00 - 17:00</span></p>
-                        <p class="shifts">Sunday<span>10:00 - 16:00</span></p>
-                        <p class="empty">&nbsp;</p>
-
-                        <h4>Email</h4>
-                        <p><a href="mailto:enquiries@cardealer.uk" class="email">enquiries@cardealer.uk</a></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="popular_brands">
-                <h3>Popular brands</h3>
-                <p class="empty">&nbsp;</p>
-                <div class="car_brands">
-                    <div class="column">
-                        <p class="brands">Audi</p>
-                        <p class="brands">BMW</p>
-                        <p class="brands">Fiat</p>
-                        <p class="brands">Land Rover</p>
-                        <p class="brands">Mercedes-Benz</p>
-                    </div>
-                    <div class="column">
-                        <p class="brands">Mini</p>
-                        <p class="brands">Peugeot</p>
-                        <p class="brands">SEAT</p>
-                        <p class="brands">Vauxhall</p>
-                        <p class="brands">Volkswagen</p>
-                    </div>
+                <div class="sorting">
+                    <select name="" id="">
+                        <option value="">Lowest price</option>
+                        <option value="">Highest price</option>
+                        <option value="">Most popular</option>
+                    </select>
                 </div>
                 
             </div>
 
-            
-            <div class="site_map">
-                <h3>Site map</h3>
-                <div class="sites">
-                    <p class="">Home</p>
-                    <p class="active">Our cars</p>
-                    <p class="">Sell your car</p>
-                    <p class="">Apply for finance</p>
-                    <p class="">About us</p>
-                    <p class="">Contact</p>
+            <div class="results_cards">
+                <div class="card_1 card">
+                    <div class="card_img_main">
+                        <p>Used</p>
+                        <div class="car_filters">
+                            <span>32k miles</span>
+                            <span>Hybrid</span>
+                            <span>Manual</span>
+                            <span>SUV</span>
+                        </div>
+                    </div>
+                    <div class="card_stats">
+                        <div class="car_details">
+                            <p class="car_make">2014 (64) Mercedes-Benz <span><i class="far fa-star"></i></span></p>
+                            <p class="car_model">CLA 250e Coupe Shooting Break</p>
+                        </div>
+                        <div class="car_price">
+                            <p class="car_monthly_price">£550.90 <span>/mo (PCP)</span></p>
+                            <p class="car_total_price">£23,300 <span><a href="">Calculate</a></span></p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="card_2 card">
+                    <div class="card_img_main">
+                        <p>New</p>
+                        <div class="car_filters">
+                            <span>Petrol</span>
+                            <span>Automatic</span>
+                            <span>Hatchback</span>
+                        </div>
+                    </div>
+                    <div class="card_stats">
+                        <div class="car_details">
+                            <p class="car_make">2020 (20) Peugeot 208 <span><i class="far fa-star"></i></span></p>
+                            <p class="car_model">1.2 PureTech 100 GT-Line</p>
+                        </div>
+                        <div class="car_price">
+                            <p class="car_monthly_price">£550.90 <span>/mo (PCP)</span></p>
+                            <p class="car_total_price">£23,300 <span><a href="">Calculate Finance</a></span></p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="card_3 card">
+                    <div class="card_img_main">
+                        <p>Used</p>
+                        <div class="car_filters">
+                            <span>325 miles</span>
+                            <span>EV</span>
+                            <span>Automatic</span>
+                            <span>Hatchback</span>
+                        </div>
+                    </div>
+                    <div class="card_stats">
+                        <div class="car_details">
+                            <p class="car_make">2019 (19) Renault Zoe <span><i class="far fa-star"></i></span></p>
+                            <p class="car_model">i R135 Rapid Charge ZE50</p>
+                        </div>
+                        <div class="car_price">
+                            <p class="car_monthly_price">£550.90 <span>/mo (PCP)</span></p>
+                            <p class="car_total_price discount">£23,300 <span class="old_price">£23,300</span> <span><a href="">Calculate finance</a></span></p>
+                        </div>
+                        
+                    </div>
+                </div> 
+
+                <div class="card_4 card">
+                    <div class="card_img_main">
+                        <p>New</p>
+                        <div class="car_filters">
+                            <span>Petrol</span>
+                            <span>Automatic</span>
+                            <span>Hatchback</span>
+                        </div>
+                    </div>
+                    <div class="card_stats">
+                        <div class="car_details">
+                            <p class="car_make">2020 (20) Peugeot 208 <span><i class="far fa-star"></i></span></p>
+                            <p class="car_model">1.2 PureTech 100 GT-Line</p>
+                        </div>
+                        <div class="car_price">
+                            <p class="car_monthly_price">£550.90 <span>/mo (PCP)</span></p>
+                            <p class="car_total_price">£23,300 <span><a href="">Calculate Finance</a></span></p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="card_value card">
+                    <div class="car_value_info">
+                        <h3>Value your car</h3>
+                        <h5>Find out the value of your car in just a few minutes.</h5>
+                        <p>VRM<span>*</span></p>
+                        <input type="text" name="" id="" placeholder="Enter VRM">
+                        <p>Mileage<span>*</span></p>
+                        <input type="text" name="" id="" placeholder="Enter Mileage">
+                        <button>Value my car</button>
+                    </div>
+                </div> 
+
+                <div class="card_5 card">
+                    <div class="card_img_main">
+                        <p>Used</p>
+                        <div class="car_filters">
+                            <span>32k miles</span>
+                            <span>Hybrid</span>
+                            <span>Manual</span>
+                            <span>SUV</span>
+                        </div>
+                    </div>
+                    <div class="card_stats">
+                        <div class="car_details">
+                            <p class="car_make">2014 (64) Mercedes-Benz <span><i class="far fa-star"></i></span></p>
+                            <p class="car_model">CLA 250e Coupe Shooting Break</p>
+                        </div>
+                        <div class="car_price">
+                            <p class="car_monthly_price">£550.90 <span>/mo (PCP)</span></p>
+                            <p class="car_total_price">£23,300 <span><a href="">Calculate</a></span></p>
+                        </div>
+                        
+                    </div>
+                </div> 
+
+                <div class="card_6 card">
+                    <div class="card_img_main">
+                        <p>Used</p>
+                        <div class="car_filters">
+                            <span>325 miles</span>
+                            <span>EV</span>
+                            <span>Automatic</span>
+                            <span>Hatchback</span>
+                        </div>
+                    </div>
+                    <div class="card_stats">
+                        <div class="car_details">
+                            <p class="car_make">2019 (19) Renault Zoe <span><i class="far fa-star"></i></span></p>
+                            <p class="car_model">i R135 Rapid Charge ZE50</p>
+                        </div>
+                        <div class="car_price">
+                            <p class="car_monthly_price">£550.90 <span>/mo (PCP)</span></p>
+                            <p class="car_total_price discount">£23,300 <span class="old_price">£23,300</span> <span><a href="">Calculate finance</a></span></p>
+                        </div>
+                        
+                    </div>
+                </div> 
+
+                <div class="card_7 card">
+                    <div class="card_img_main">
+                        <p>Used</p>
+                        <div class="car_filters">
+                            <span>32k miles</span>
+                            <span>Hybrid</span>
+                            <span>Manual</span>
+                            <span>SUV</span>
+                        </div>
+                    </div>
+                    <div class="card_stats">
+                        <div class="car_details">
+                            <p class="car_make">2014 (64) Mercedes-Benz <span><i class="far fa-star"></i></span></p>
+                            <p class="car_model">CLA 250e Coupe Shooting Break</p>
+                        </div>
+                        <div class="car_price">
+                            <p class="car_monthly_price">£550.90 <span>/mo (PCP)</span></p>
+                            <p class="car_total_price">£23,300 <span><a href="">Calculate</a></span></p>
+                        </div>
+                        
+                    </div>
+                </div> 
+
+                <div class="card_8 card">
+                    <div class="card_img_main">
+                        <p>New</p>
+                        <div class="car_filters">
+                            <span>Petrol</span>
+                            <span>Automatic</span>
+                            <span>Hatchback</span>
+                        </div>
+                    </div>
+                    <div class="card_stats">
+                        <div class="car_details">
+                            <p class="car_make">2020 (20) Peugeot 208 <span><i class="far fa-star"></i></span></p>
+                            <p class="car_model">1.2 PureTech 100 GT-Line</p>
+                        </div>
+                        <div class="car_price">
+                            <p class="car_monthly_price">£550.90 <span>/mo (PCP)</span></p>
+                            <p class="car_total_price">£23,300 <span><a href="">Calculate Finance</a></span></p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="card_9 card">
+                    <div class="card_img_main">
+                        <p>Used</p>
+                        <div class="car_filters">
+                            <span>32k miles</span>
+                            <span>Hybrid</span>
+                            <span>Manual</span>
+                            <span>SUV</span>
+                        </div>
+                    </div>
+                    <div class="card_stats">
+                        <div class="car_details">
+                            <p class="car_make">2014 (64) Mercedes-Benz <span><i class="far fa-star"></i></span></p>
+                            <p class="car_model">CLA 250e Coupe Shooting Break</p>
+                        </div>
+                        <div class="car_price">
+                            <p class="car_monthly_price">£550.90 <span>/mo (PCP)</span></p>
+                            <p class="car_total_price">£23,300 <span><a href="">Calculate</a></span></p>
+                        </div>
+                        
+                    </div>
+                </div> 
+
+                <div class="card_10 card">
+                    <div class="card_img_main">
+                        <p>New</p>
+                        <div class="car_filters">
+                            <span>32k miles</span>
+                            <span>Hybrid</span>
+                            <span>Manual</span>
+                            <span>SUV</span>
+                        </div>
+                    </div>
+                    <div class="card_stats">
+                        <div class="car_details">
+                            <p class="car_make">2014 (64) Mercedes-Benz <span><i class="far fa-star"></i></span></p>
+                            <p class="car_model">CLA 250e Coupe Shooting Break</p>
+                        </div>
+                        <div class="car_price">
+                            <p class="car_monthly_price">£550.90 <span>/mo (PCP)</span></p>
+                            <p class="car_total_price">£23,300 <span><a href="">Calculate</a></span></p>
+                        </div>
+                        
+                    </div>
+                </div> 
+
+                <div class="card_11 card">
+                    <div class="card_img_main">
+                        <p>Used</p>
+                        <div class="car_filters">
+                            <span>325 miles</span>
+                            <span>EV</span>
+                            <span>Automatic</span>
+                            <span>Hatchback</span>
+                        </div>
+                    </div>
+                    <div class="card_stats">
+                        <div class="car_details">
+                            <p class="car_make">2019 (19) Renault Zoe <span><i class="far fa-star"></i></span></p>
+                            <p class="car_model">i R135 Rapid Charge ZE50</p>
+                        </div>
+                        <div class="car_price">
+                            <p class="car_monthly_price">£550.90 <span>/mo (PCP)</span></p>
+                            <p class="car_total_price discount">£23,300 <span class="old_price">£23,300</span> <span><a href="">Calculate finance</a></span></p>
+                        </div>
+                        
+                    </div>
+                </div> 
+            </div>
+
+            <div class="results_pagination">
+                <div class="to_top">
+                    <a href="#">Back to top</a>
+                </div>
+                <div class="page_buttons">
+                    <span><i class="fas fa-angle-left"></i></span>
+                    <span class="active">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span><i class="fas fa-angle-right"></i></span>
+                    <span><i class="fas fa-angle-double-right"></i></span>
+                </div>
+                <div class="sorting">
+                    <select name="" id="">
+                        <option value="">Lowest price</option>
+                        <option value="">Highest price</option>
+                        <option value="">Most popular</option>
+                    </select>
                 </div>
             </div>
+
+            <div class="agreement_terms">
+                <div class="agreement_writing">
+                    <div class="agreement">
+                        <p><strong>Representative example:</strong> Borrowing £11,790.00 over 4 years with a representative APR of 7.9 %, an annual interest rate of 4.08 % (Fixed) and a deposit of £500.00, the amount payable would be £273.59 per month, with a total cost of credit of £1,843.32 and a total amount payable of £13,633.32.</p>
+                    </div>
+                    <div class="hide_button">
+                        <button>Hide breakdown <span><i class="fas fa-angle-up"></i></span></button>
+                    </div>
+                    
+                    <div class="show_button">
+                        <button>Show breakdown <span><i class="fas fa-angle-down"></i></span></button>
+                    </div>
+                </div>
+
+                <div class="available_plans">
+                    <div class="pcp_plan">
+                        <p>Personal Contract Purchase</p>
+                    </div>
+                    <div class="hp_plan">
+                        <p>Hire Purchase</p>
+                    </div>
+                </div>
+                
+                <div class="agreement_plan">
+                    <div class="amount_months data_field">
+                        <p class="plan_title">48 monthly payments</p>
+                        <p class="plan_data">£157.25</p>
+                    </div>
+                    <div class="cash_price data_field">
+                        <p class="plan_title">Cash price</p>
+                        <p class="plan_data">£9,998.00</p>
+                    </div>
+                    <div class="cust_deposit data_field">
+                        <p class="plan_title">Customer deposit</p>
+                        <p class="plan_data">£250.00</p>
+                    </div>
+                    <div class="amount_of_credit data_field">
+                        <p class="plan_title">Amount of credit</p>
+                        <p class="plan_data">£11,980.75</p>
+                    </div>
+                    <div class="apr data_field">
+                        <p class="plan_title">APR</p>
+                        <p class="plan_data">7.9%</p>
+                    </div>
+                    <div class="term data_field">
+                        <p class="plan_title">Term</p>
+                        <p class="plan_data">48 months</p>
+                    </div>
+                    <div class="total_payable data_field">
+                        <p class="plan_title">Total amount payable</p>
+                        <p class="plan_data">£12,163.72</p>
+                    </div>
+                    <div class="rate_of_interest data_field">
+                        <p class="plan_title">Rate of interest (fixed)</p>
+                        <p class="plan_data">4.08% PA</p>
+                    </div>
+                    <div class="annual_mileage data_field">
+                        <p class="plan_title">Annual mileage</p>
+                        <p class="plan_data">8,000</p>
+                    </div>
+                    <div class="optional_final_payment data_field">
+                        <p class="plan_title">Optional final payment</p>
+                        <p class="plan_data">£3888.04</p>
+                    </div>
+                </div>
+                
+            </div>
         </div>
+    </div>
 
-        <script>
-            function toggleStar($this) {
-                $($this).toggleClass('far fas');
-            }
+    
 
-        </script>
-
-    </body>
+</body>
 </html>
